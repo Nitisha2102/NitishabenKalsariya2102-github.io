@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div id="wrapper">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="challenge.html">Challenge</a></li>
+            <li><a href="#">Recipe</a></li>
+            <li><a href="/form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Reserve your Room</h1>
+        <h2>Our Reservation Policies</h2>
+    </header>
+
+    <section class="policies">
+       <ul>
+        <li>Check-in time after 3:00pm on</li>
+        <li>Check-out time by 11:00am or charges are incurred</li>
+        <li>Breakfast and afternoon tea/snacks included in cost</li>
+        <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+        <li>50% deposit required at booking</li>
+        <li>Cancellations less than 72 hours ahead if check-in forfeit 50% of deposit</li>
+       </ul>
+    </section>
+
+    <section class="reserve">
+        <form method="post" name="reservation" data-netlify="true">
+
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="first name" required>
+            </div>
+
+             <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="last name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="email" required>
+            </div>
+
+             <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="phone" required>
+            </div>
+
+            <div>
+                <label for="check-in date">Check-in Date</label>
+                <input type="date" name="check-in date" id="check-in date" placeholder="check-in date" required>
+            </div>
+
+            <div>
+                <label for="check-out date">Check-out Date</label>
+                <input type="date" name="check-out date" id="check-out date" placeholder="check-out date" required>
+            </div>
+
+            <div>
+                <label for="number of guest">Number of Guests(4 is maximum)</label>
+                <input type="number" name="number of guest" id="number of guest" min="1" max="4" required>
+            </div>
+
+            <div>
+                <label for="room type">Select Room Type</label>
+                <select id="room type" name="room type">
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="king Suite">Suite</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="family">Family Room</option>
+                </select>
+                
+            </div>
+
+            <div>
+                <label for="valley view">Valley View (additional cost)</label><br>
+                <input type="radio" id="yesOption" name="agreement" value="yes">
+                <label for="yesOption">Yes</label>
+
+                <input type="radio" id="noOption" name="agreement" value="no">
+                <label for="noOption">No</label>
+            </div>
+
+            <div>
+                <label for="special request">Special Request</label>
+                <textarea name="special request" rows="3" cols="27" placeholder=""></textarea>
+            </div>
+            
+            <div>
+                <label for="upload vaccine proof">Upload Vaccine Proof</label>
+                <input type="file" placeholder="No file Choosen" required>
+            </div>
+
+            <div>
+                <label for="agree to terms">I agree to all the terms listed above.</label>
+                <input type="checkbox" required>
+            </div>
+
+            <div>
+                <label for="create a password to return">Create a password to return. Username is your Email.</label>
+                <input type="password" name="create a password to return" id="create a password to return" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+
+            <div>
+                <input type="reset" value="Reset">
+            </div>
+
+            <footer>
+    <p>
+            &copy; 2022 The Scenic Inn at Hill Side<br>
+            Milford, NH
+
+    </p>
+            </footer>
+
+        </form>
+    </section>
+
+
+    </div>
+
+
+</body>
+</html>
