@@ -22,7 +22,7 @@ html {
   box-sizing : inherit ;
 }
 nav {
-  background-color: rgb(123, 144, 236);
+  background-color: rgb(66, 88, 187);
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ nav li {
 }
 
 nav a {
-  padding: 20px;
+  padding: 10px;
   display: inline-block;
   color: white;
   text-decoration: none;
@@ -54,8 +54,8 @@ nav a:active{
 
 
 main {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  margin: auto;
 }
 
 h1,
@@ -65,8 +65,8 @@ h3{
 }
 
 h1 {
-  font-size: 3rem;
-  margin: 6% 0;
+  font-size: 2rem;
+  margin: 5% 0;
   text-align: center;
   text-shadow: 3px 5px 3px #ccc;
 }
@@ -74,7 +74,7 @@ h1 {
 img {
   float: left;
   max-width: 30%;
-  margin-left: 10%;
+  margin-left: 0%;
   margin-right: 10%;
   border-radius: 50%;
   box-shadow: 5px 5px 3px #ccc;
@@ -88,8 +88,8 @@ header h2 {
 .rate {
   clear: both;
   margin-top: 6%;
-  text-align: center;
-  font-size: 1.5rem;
+  text-align: left;
+  font-size: 1.1rem;
 }
 
 .emoji::after {
@@ -100,7 +100,7 @@ header h2 {
 .ingredients,
 .instructions,
 .nutrition {
-  width: 40%;
+  width: 30%;
   float: left;
 }
 
@@ -125,14 +125,14 @@ blockquote {
 }
 
 blockquote small {
-  text-align: right;
+  text-align: center;
 
 }
  
 footer {
   background-color: rgb(163, 177, 240);
   color: black;
-  padding: 2% 0;
+  padding: 5% 0;
   margin-top: 10px;
 }
 
@@ -153,9 +153,102 @@ footer ul {
 .col3 {
    display: block;
    float: left;
-   width: 30%;
+   width: 21%;
 }
 
 footer p {
   clear: both;
 }
+
+
+
+/* media queries go below  */
+
+@media(max-width: 360px){
+
+      html{
+        line-height: 125%;
+      }
+      nav a{
+        padding: 7px;
+        letter-spacing: normal;
+        font-size: .7rem;
+      }
+
+      nav ul{
+          padding-left: 1%;
+      }
+
+      main{
+         width: 75%;
+      }
+      h1{
+          font-size: 1.15rem;
+          text-shadow: none;
+          margin-right: 1%;
+      }
+
+      h2{
+          font-size: 1.15rem;
+      }
+       img{
+          float: none;
+          max-width: 60%;
+          margin-right: 10%;
+       }
+
+       .rate{
+            font-size: 0.3rem;
+       }
+
+       blockquote{
+        max-width: 70%;
+        max-height: 70%;
+       }
+
+      .details,
+      .ingredients,
+      .instructions,
+      .nutrition {
+      width: 90%;
+      float: none;
+      }
+
+    .col1,
+    .col2,
+    .col3 {
+   display: block;
+   float: none;
+   width: 90%;
+    }
+
+}
+
+ @media (max-width:810px) {
+         html {
+           font-size: 1rem;
+         }
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
