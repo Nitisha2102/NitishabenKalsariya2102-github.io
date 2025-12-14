@@ -120,5 +120,7 @@ button[type=submit] {
     margin-top: 3rem;
 }
 
-
+button[type=submit] {
+    transition: all 0.3s ease;
+}
 

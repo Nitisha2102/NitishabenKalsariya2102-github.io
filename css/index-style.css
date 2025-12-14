@@ -24,7 +24,7 @@ h1{
   animation-fill-mode: forwards; /*Make it stay after animation */
 }
 
-@keyframes fadeTxt {
+@keyframes fadeText {
   0% {
     opacity: 0;
   }
@@ -35,6 +35,20 @@ h1{
     opacity: 1;
     font-size: 3.25rem;
   }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.4);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 h2{
